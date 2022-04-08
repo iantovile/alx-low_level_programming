@@ -5,9 +5,12 @@
  * C programming language
  * returns 0 as teh value
  */
-int main()
+
+int main(void)
 
 {
-    puts("\"Programmin is like building a multilingual puzzle\n");
+
+    puts("\"Programming is like building a multilingual puzzle\n");
     return (0);
+
 }
