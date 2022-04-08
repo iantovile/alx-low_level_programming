@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * prints the words as it is
- * C programming language
- * returns 0 as the value
+ * main - we use "puts" to print the output of a string
+ *
+ * short description - puts will print the senternce in to teh standard output
+ *
+ * return - the program will return '0' if executed with no errors
  */
 
 int main(void)
