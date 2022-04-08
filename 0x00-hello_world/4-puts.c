@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * prints the words as it is
+ * C programming language
+ * returns 0 as teh value
+ */
 int main()
 
 {
