@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* Main - gets a random integer and prints whether it is positive or negative */
+/* Main - gets a random integer */
 int main(void)
 {
 	int n;
