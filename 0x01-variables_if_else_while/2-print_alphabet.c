@@ -8,14 +8,12 @@
 
 int main(void)
 {
-	char abc = 'a';
+	char letter;
 
-	while (abc <= 'z')
-	{
-		putchar(abc);
-		abc++;
-	}
-	putchar("\n");
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
 	return (0);
-
 }
