@@ -9,13 +9,16 @@
 int main(void)
 {
         char letter;
-	char c;
+	char c = 'A';
 
         for (letter = 'a'; letter <= 'z'; letter++)
                 putchar(letter);
 
-        for (c = "A"; c <= "Z"; c++)
-		putchar(c)
+        while (c <= 'Z')
+	{
+		putchar(c);
+		c++
+	}
 
 	putchar('\n');
 
