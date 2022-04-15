@@ -1,19 +1,16 @@
 #include "main.h"
-
 /**
- * _isdigit - function that prints the sign of a number.
- *
- * @c: is a digit
- *
- * Return: 1 if c is a digit, 0 otherwise.
-*/
+ * _isdigit - if is a digit
+ *@c: print int
+ * Return: Always 0.
+ */
 
-int _isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
+int _isdigit(int c){
+	if (c >= 48 && c <= 57)
 	{
 		return (1);
 	}
-	else
+	else{
 		return (0);
+	}
 }
