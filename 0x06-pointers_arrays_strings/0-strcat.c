@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * _strcat - concatenates strings
- * @dest: pointer to the changed character
- * @src: also  pointer to changed character
- * Return: dest
+ *_strcat - concatenates two strings
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will also be changed
+ *Return: dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -24,7 +23,6 @@ char *_strcat(char *dest, char *src)
 		b++;
 		a++;
 	}
-
 	dest[a] = '\0';
 
 	return (dest);
