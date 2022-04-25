@@ -9,14 +9,15 @@ include "main.h"
 int _strcmp(char *s1, char *s2)
 
 {
+	int x;
 
-	char *str_one = s1;
-	char *str_two = s2;
-
-	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
+	for ( x = 0; s1[x] != '\0' || s2[x] != '\0'; x++)
 	{
-		str_one++;
-		str_two++;
+		if (s1[x] != s2[x])
+		{
+			return (s1[x] - s2[x]);
+		}
 	}
-	return (*str_one - *str_two);
+	return 0;
+
 }
