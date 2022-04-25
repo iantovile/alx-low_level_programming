@@ -5,18 +5,18 @@ include "main.h"
  * Return: returns char
  */
 
+char *string_toupper(char *s)
+{
 
-char *string_toupper(char *str)
-	{
 	int i;
+	
+	i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(s + i))
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] = str[i] - 32;
-		}
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
+		i++;
 	}
-
-	return (str);
+	return (s);
 }
