@@ -6,24 +6,18 @@
  *Return: dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
-	int a, b;
+	int i, j;
+	for (i = 0; *dest != 0; i++)
+		dest++;
 
-	a = 0;
-	while (dest[a] != '\0')
+	for (j = 0; j < n && src[j] != 0; j++)
 	{
-		a++;
+		*dest = src[j];
+		dest++;
 	}
-
-	b = 0;
-	while (src[b] != '\0')
-	{
-		dest[a] = src[b];
-		b++;
-		a++;
-	}
-	dest[a] = '\0';
-
+	*dest = '\0';
+	dest -= (i + j);
 	return (dest);
 }
